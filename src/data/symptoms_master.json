@@ -1,0 +1,283 @@
+	{
+	"major-category" : [
+	{
+		"name": "general",
+			
+		"fever": {
+		   "sub_category": ["low-grade", "medium", "high", "fever"]
+		   
+		},
+		"chills": { "sub_category":   ["chills"]},
+		   
+		"sweats": {
+			"sub_category": ["sweats"]
+			},
+			
+		"shivering": {
+				"sub_category": ["shivering", "violent-shivering"]
+		},
+		
+		"general weakness": {
+		"sub_category": [ "muscle-ache", "extreme-tiredness"]
+		},   
+		   
+	   "cough": {
+			"sub_category": ["persistent", "continuous", "uncontrolled", "cough","dry", "wet/productive", "hoarse/barking"]
+	   },
+	   
+		"smell": {
+		"sub_category": ["change to the sense of smell", "loss of smell"]
+		
+		},
+			
+			
+		"breathing": { 
+		"sub_category": ["wheezing", "hard to breathe", "severe", "rapid-and-shallow-breathing","high-pitched-intake-sounds-like-whoop"]
+		},
+		
+		"congestion": 
+		{ "sub_category": ["congestion"]
+		},
+		
+		"sneezing": {
+			"sub_category": ["sneezing"]
+		},
+		
+		
+		"headache": {
+			"sub_category": ["more-frequent", "more-severe", "severe-in-the-morning", "worsened-by-bending", "worsened-by-coughing", "mild", "headache"]
+			
+		},
+		
+		"seizures": {
+		"sub_category": ["seizures"]
+		
+		},
+		"speech": { "sub_category": ["difficulties", "slurred"] },
+				
+		"paralysis": { "sub_category": ["on-one-side-of-body", "paralysis"] },
+		"weakness":  { "sub_category": ["on-one-side-of-body"] },
+		
+		
+		
+		
+		"nausea": { "sub_category": ["nausea"]},
+		"vomiting": { "sub_category": ["vomiting"] },
+		
+		
+		"fatigue": { "sub_category": ["fatigue"]},
+		"restlessness": { "sub_category": ["restlessness"]},
+		"irritability": {"sub_category": ["irritability"]},
+		
+	
+		"joint-pain": {
+	
+		"sub_category": ["severe-and-persistent"]
+		},
+	
+	
+		"special-symptoms": {
+		
+		"sub_category": ["high-fever-with-profuse-sweating-alternate-with-shivering-and-chills"]
+			
+		
+	}
+	},
+	
+	
+	{	
+		"name": "indvividual-body-parts",
+		
+	
+		"eyes": { 
+			"sub_category": ["red-eye-with-pain", "red-watery-eyes"]
+		},
+		"head": {
+			
+		},
+		
+		"hair-and-scalp": {
+			
+		},
+		
+		"face": {
+	
+		},
+		
+		"eye": {
+			
+		},
+		
+		"ear": {
+			
+		
+		},
+		
+		"nose": {
+			"sub_category": [ "runny", "stuffy", "congested"]
+		},
+		
+		"mouth": {
+		
+		},
+		
+		"throat": {
+			"sub_category": ["sore","ithcy"]
+		
+		},
+		
+		"neck": {
+			
+		},
+		
+		"shoulder": {
+			
+		},
+		
+		"arm-wrist": {
+		
+		},
+		
+		"chest": {
+			
+		},
+		
+		"breast": {
+		
+		},
+		
+		"back-upper": {
+			
+		},
+		
+		"back-lower": {
+		
+		},
+		"abodmen": {
+		
+		},
+		
+		"pelvis": {
+			
+		},
+		
+		"groin": {
+			
+		},
+		
+		"urinary": {
+			
+		},
+		
+		"female-genitals": {
+			
+		},
+		
+		"male-genitals": {
+			
+		},
+		
+		"buttocks-anus": {
+			
+		},
+		
+		"bowels": {
+			
+		},
+		
+		"hip": {
+			
+		},
+		
+		"thigh": {
+			
+		},
+		
+		"knee": {
+			
+		},
+		
+		"leg": {
+			
+		},
+		
+		"ankle": {
+			
+		},
+		
+		"foot": {
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+	},
+	
+		
+	
+	
+	{
+
+	"name": "stool-urine-mucus-discharge",
+	
+	
+	"stool":  {
+		"sub_category": ["diarrhea", "constipation", "black-colored","blood-present", "blood-mixed in stool", "blood-in-wipes"]
+		
+	},
+	
+	"skin-rash": {
+		
+		"sub_category": ["rash","red-spots-turning-into-fluid-filled-blisters-and-dry-out-to-scabs", 
+			"bubbly-rash-affecting-one-side-of-face", "rash-on-face-spreading-to-body-limbs", "head-rash-spreading-to-body",
+			"brigh-red-rash-on-cheeks-spreading-to-head-to-body","rash-on-palm-and-soles"]
+	},
+	
+	"skin-itching": {"sub_category": ["miserable-itching", "all-over-body-itching", "severe-in-groin-itching"]},
+		
+	"skin-bumps-lumps-spots-moles": { "sub_category":["white-spots-inside-cheek"]},
+	
+	"skin-feel-discoloration": { "sub_category":["wet-and-sweaty","yellowing-of-the-skin-and whites-of-eyes"]  
+		
+		
+	},	 
+
+	"urine": {
+		"sub_category": ["frequent_urination(more than 3 times in night)","urine-hesitancy","blood-present"]
+		
+	}
+	
+	},
+	
+	
+	
+	
+	
+			
+	
+	{
+		
+		"name": "brain-and-mind-related",
+	
+		"brain-related": {
+		
+			"sub_category": ["personality-changes", "behavior-changes", "unconsciousness", "delirium", "confusion"]
+				
+		}
+		
+		
+	
+		
+	
+	
+}
+
+]
+	}

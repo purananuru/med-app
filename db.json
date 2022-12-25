@@ -1,0 +1,46 @@
+{
+  "disorders": [
+    {
+      "disorderCategories": [
+        {
+          "category": "fever",
+          "sub_category": "medium"
+        },
+        {
+          "category": "chills",
+          "sub_category": "chills"
+        }
+      ],
+      "disorderName": "abc",
+      "id": 1
+    },
+    {
+      "disorderCategories": [
+        {
+          "category": "shivering2",
+          "sub_category": "shivering"
+        },
+        {
+          "category": "fever3",
+          "sub_category": "medium"
+        }
+      ],
+      "disorderName": "diabetes",
+      "id": 2
+    },
+    {
+      "disorderCategories": [
+        {
+          "category": "fever",
+          "sub_category": "low-grade"
+        },
+        {
+          "category": "cough",
+          "sub_category": "wet/productive"
+        }
+      ],
+      "disorderName": "Strong Cough",
+      "id": 3
+    }
+  ]
+}

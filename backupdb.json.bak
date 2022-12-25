@@ -1,0 +1,12 @@
+{
+  "disorders": [
+    {
+      "id": 1,
+      "categories": [
+        { "category": "fever", "sub-category": "low-grade" },
+        { "category": "chills", "sub-category": "" }
+      ],
+      "disorder": "Flu"
+    }
+  ]
+}

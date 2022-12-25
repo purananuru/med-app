@@ -1,0 +1,8 @@
+.card {
+  background: rgb(241, 238, 238);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  margin: 0 10px 10px 0;
+}
