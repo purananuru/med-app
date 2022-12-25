@@ -107,9 +107,12 @@ const SymptomList = ({ symptoms, onAdd }) => {
             value={disorderName}
             onChange={(e) => setDisorderName(e.target.value)}
           />
+          <input
+            type="submit"
+            value="Save Disorder"
+            className="btn btn-block"
+          />
         </div>
-
-        <input type="submit" value="Save Disorder" className="btn btn-block" />
       </form>
       <span className={classes.symptoms}>
         {symptoms[0].categories.map((symptom) => (
