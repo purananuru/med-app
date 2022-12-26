@@ -46,7 +46,11 @@ const SymptomList = ({ symptoms, onAdd }) => {
         setconfigSymptoms(
           configSymptoms.map((e) =>
             e.category === name && e.sub_category.includes(value)
-              ? { ...e, cat_cb_state: true, sub_cat_cb_value: value }
+              ? {
+                  ...e,
+                  cat_cb_state: true,
+                  sub_cat_cb_value: [...e.sub_cat_cb_value, value],
+                }
               : e
           )
         );
@@ -57,6 +61,20 @@ const SymptomList = ({ symptoms, onAdd }) => {
           configSymptoms.map((e) =>
             e.category === value
               ? { ...e, cat_cb_state: "false", sub_cat_cb_value: "" }
+              : e
+          )
+        );
+      } else {
+        setconfigSymptoms(
+          configSymptoms.map((e) =>
+            e.category === name && e.sub_category.includes(value)
+              ? {
+                  ...e,
+                  cat_cb_state: true,
+                  sub_cat_cb_value: e.sub_cat_cb_value?.filter(
+                    (e) => !e.includes(value)
+                  ),
+                }
               : e
           )
         );
@@ -144,7 +162,7 @@ const SymptomList = ({ symptoms, onAdd }) => {
                   >
                     <input
                       style={{ display: "inline" }}
-                      type="radio"
+                      type="checkbox"
                       name={symptom.category}
                       value={sub}
                       id={Math.floor(Math.random() * 10000) + 1}
@@ -153,7 +171,7 @@ const SymptomList = ({ symptoms, onAdd }) => {
                         configSymptoms.filter(
                           (e) =>
                             e.category === symptom.category &&
-                            e.sub_cat_cb_value === sub
+                            e.sub_cat_cb_value?.includes(sub)
                         ).length > 0
                       }
                     />

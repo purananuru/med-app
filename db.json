@@ -41,6 +41,42 @@
       ],
       "disorderName": "Strong Cough",
       "id": 3
+    },
+    {
+      "disorderCategories": [
+        {
+          "category": "fever",
+          "sub_category": [
+            "low-grade"
+          ]
+        },
+        {
+          "category": "chills",
+          "sub_category": [
+            "chills"
+          ]
+        }
+      ],
+      "disorderName": "tyu",
+      "id": 4
+    },
+    {
+      "disorderCategories": [
+        {
+          "category": "shivering",
+          "sub_category": [
+            "violent-shivering"
+          ]
+        },
+        {
+          "category": "general weakness",
+          "sub_category": [
+            "extreme-tiredness"
+          ]
+        }
+      ],
+      "disorderName": "yut",
+      "id": 5
     }
   ]
 }
