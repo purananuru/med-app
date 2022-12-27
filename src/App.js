@@ -11,8 +11,8 @@ const App = () => {
     const getDisorders = async () => {
       const disordersFromServer = await fetchDisorders();
       setDisorders(disordersFromServer);
-      console.log(disordersFromServer);
-      console.log(symptoms);
+      // console.log(disordersFromServer);
+      // console.log(symptoms);
     };
     getDisorders();
   }, []);

@@ -23,12 +23,24 @@ const SymptomList = ({ symptoms, onAdd }) => {
   const [configSymptoms, setconfigSymptoms] = useState([]);
 
   const initconfigSymptons = () => {
-    const tmpSymptoms = symptoms[0].categories.map((symptom) =>
-      1 === 1
-        ? { ...symptom, cat_cb_state: false, sub_cat_cb_value: "" }
-        : symptom
-    );
-    setconfigSymptoms(tmpSymptoms);
+    setconfigSymptoms([]);
+    header_fields.forEach((v, idx) => {
+      let tmpSymptoms = [];
+      tmpSymptoms = symptoms[idx].categories.map((symptom) =>
+        1 === 1
+          ? {
+              ...symptom,
+              major_category: header_fields[idx],
+              cat_cb_state: false,
+              sub_cat_cb_value: "",
+            }
+          : symptom
+      );
+      console.log(`configSymptoms = ${configSymptoms.length}`);
+      setconfigSymptoms((prevetmpSymptoms) => {
+        return prevetmpSymptoms.concat(tmpSymptoms);
+      });
+    });
   };
 
   useEffect(() => {
@@ -101,10 +113,16 @@ const SymptomList = ({ symptoms, onAdd }) => {
       (e) => e.cat_cb_state === true && e.sub_cat_cb_value !== ""
     );
     selectedSymptoms.forEach((e) => {
-      console.log(`${e.category} ${e.cat_cb_state} ${e.sub_cat_cb_value}`);
+      console.log(
+        `selectedSymptoms = ${e.major_category} ${e.category} ${e.cat_cb_state} ${e.sub_cat_cb_value}`
+      );
       disorderCategories = [
         ...disorderCategories,
-        { category: e.category, sub_category: e.sub_cat_cb_value },
+        {
+          major_category: e.major_category,
+          category: e.category,
+          sub_category: e.sub_cat_cb_value,
+        },
       ];
     });
   };
@@ -147,25 +165,26 @@ const SymptomList = ({ symptoms, onAdd }) => {
       </form>
       <span>
         {header_fields.map((v, idx) => (
-          <React.Fragment>
+          <React.Fragment key={Math.floor(Math.random() * 100000) + 1}>
             <h4>
               {v}-{idx}
             </h4>
             <br />
             <span className={classes.symptoms}>
-              {symptoms[0].categories.map((symptom) => (
-                <Card key={Math.floor(Math.random() * 10000) + 1}>
+              {symptoms[idx].categories.map((symptom) => (
+                <Card key={Math.floor(Math.random() * 100000) + 1}>
                   <span>
                     <h3>
                       <input
                         type="checkbox"
                         name="symptoms"
                         value={symptom.category}
-                        id={symptom.category}
+                        id={`${idx}-${symptom.category}`}
                         onChange={handleChange}
                         checked={
                           configSymptoms.filter(
                             (e) =>
+                              e.major_category === header_fields[idx] &&
                               e.category === symptom.category &&
                               e.cat_cb_state === true
                           ).length > 0
@@ -180,14 +199,14 @@ const SymptomList = ({ symptoms, onAdd }) => {
                       {symptom.sub_category.map((sub, index) => (
                         <span
                           style={{ display: "inline" }}
-                          key={Math.floor(Math.random() * 10000) + 1}
+                          key={Math.floor(Math.random() * 100000) + 1}
                         >
                           <input
                             style={{ display: "inline" }}
                             type="checkbox"
                             name={symptom.category}
                             value={sub}
-                            id={Math.floor(Math.random() * 10000) + 1}
+                            id={`${idx}-${symptom.category}-${sub}`}
                             onChange={handleChange}
                             checked={
                               configSymptoms.filter(
@@ -198,7 +217,7 @@ const SymptomList = ({ symptoms, onAdd }) => {
                             }
                           />
                           <li
-                            key={Math.floor(Math.random() * 10000) + 1}
+                            key={Math.floor(Math.random() * 100000) + 1}
                             style={{ display: "inline" }}
                           >
                             <label style={{ display: "inline" }}>{sub}</label>

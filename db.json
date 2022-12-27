@@ -3,15 +3,36 @@
     {
       "disorderCategories": [
         {
-          "category": "fever",
-          "sub_category": "medium"
+          "major_category": "general",
+          "category": "sweats",
+          "sub_category": [
+            "sweats"
+          ]
         },
         {
-          "category": "chills",
-          "sub_category": "chills"
+          "major_category": "body-Parts",
+          "category": "shoulder",
+          "sub_category": [
+            "shoulder"
+          ]
+        },
+        {
+          "major_category": "stool-related",
+          "category": "urine",
+          "sub_category": [
+            "blood-present"
+          ]
+        },
+        {
+          "major_category": "brain-and-mind-related",
+          "category": "brain-related",
+          "sub_category": [
+            "confusion",
+            "unconsciousness"
+          ]
         }
       ],
-      "disorderName": "abc",
+      "disorderName": "wer",
       "id": 1
     }
   ]

@@ -8,6 +8,7 @@ const SymptomsData = [
         category: "fever",
         sub_category: ["low-grade", "medium", "high"],
       },
+      ,
       {
         id: 2,
         category: "chills",
@@ -148,6 +149,156 @@ const SymptomsData = [
         category: "eyes",
         sub_category: ["red-eye-with-pain", "red-watery-eyes"],
       },
+      {
+        id: 2,
+        category: "head",
+        sub_category: ["head"],
+      },
+      {
+        id: 3,
+        category: "hair-and-scalp",
+        sub_category: ["hair-and-scalp"],
+      },
+      {
+        id: 4,
+        category: "face",
+        sub_category: ["face"],
+      },
+      {
+        id: 5,
+        category: "eye",
+        sub_category: ["eye"],
+      },
+      {
+        id: 6,
+        category: "ear",
+        sub_category: ["ear"],
+      },
+      {
+        id: 7,
+        category: "nose",
+        sub_category: ["runny", "stuffy", "congested"],
+      },
+      {
+        id: 8,
+        category: "mouth",
+        sub_category: ["mouth"],
+      },
+      {
+        id: 9,
+        category: "throat",
+        sub_category: ["sore", "ithcy"],
+      },
+      {
+        id: 10,
+        category: "neck",
+        sub_category: ["neck"],
+      },
+      {
+        id: 11,
+        category: "shoulder",
+        sub_category: ["shoulder"],
+      },
+      {
+        id: 12,
+        category: "arm-wrist",
+        sub_category: ["arm-wrist"],
+      },
+      {
+        id: 13,
+        category: "chest",
+        sub_category: ["chest"],
+      },
+      {
+        id: 14,
+        category: "neck",
+        sub_category: ["neck"],
+      },
+      {
+        id: 15,
+        category: "breast",
+        sub_category: ["breast"],
+      },
+      {
+        id: 16,
+        category: "back-upper",
+        sub_category: ["back-upper"],
+      },
+      {
+        id: 17,
+        category: "back-lower",
+        sub_category: ["back-lower"],
+      },
+      {
+        id: 18,
+        category: "abodmen",
+        sub_category: ["abodmen"],
+      },
+      {
+        id: 19,
+        category: "pelvis",
+        sub_category: ["pelvis"],
+      },
+      {
+        id: 20,
+        category: "groin",
+        sub_category: ["groin"],
+      },
+      {
+        id: 21,
+        category: "urinary",
+        sub_category: ["urinary"],
+      },
+      {
+        id: 22,
+        category: "female-genitals",
+        sub_category: ["female-genitals"],
+      },
+      {
+        id: 23,
+        category: "male-genitals",
+        sub_category: ["male-genitals"],
+      },
+      {
+        id: 24,
+        category: "buttocks-anus",
+        sub_category: ["buttocks-anus"],
+      },
+      {
+        id: 25,
+        category: "bowels",
+        sub_category: ["bowels"],
+      },
+      {
+        id: 26,
+        category: "hip",
+        sub_category: ["hip"],
+      },
+      {
+        id: 27,
+        category: "thigh",
+        sub_category: ["thigh"],
+      },
+      {
+        id: 28,
+        category: "knee",
+        sub_category: ["knee"],
+      },
+      {
+        id: 29,
+        category: "leg",
+        sub_category: ["leg"],
+      },
+      {
+        id: 30,
+        category: "ankle",
+        sub_category: ["ankle"],
+      },
+      {
+        id: 31,
+        category: "foot",
+        sub_category: ["foot"],
+      },
     ],
   },
   {
@@ -164,6 +315,50 @@ const SymptomsData = [
           "blood-present",
           "blood-mixed in stool",
           "blood-in-wipes",
+        ],
+      },
+      {
+        id: 2,
+        category: "skin-rash",
+        sub_category: [
+          "rash",
+          "red-spots-turning-into-fluid-filled-blisters-and-dry-out-to-scabs",
+          "bubbly-rash-affecting-one-side-of-face",
+          "rash-on-face-spreading-to-body-limbs",
+          "head-rash-spreading-to-body",
+          "brigh-red-rash-on-cheeks-spreading-to-head-to-body",
+          "rash-on-palm-and-soles",
+        ],
+      },
+      {
+        id: 3,
+        category: "skin-itching",
+        sub_category: [
+          "miserable-itching",
+          "all-over-body-itching",
+          "severe-in-groin-itching",
+        ],
+      },
+      {
+        id: 4,
+        category: "skin-bumps-lumps-spots-moles",
+        sub_category: ["white-spots-inside-cheek"],
+      },
+      {
+        id: 5,
+        category: "skin-feel-discoloration",
+        sub_category: [
+          "wet-and-sweaty",
+          "yellowing-of-the-skin-and whites-of-eyes",
+        ],
+      },
+      {
+        id: 6,
+        category: "urine",
+        sub_category: [
+          "frequent_urination (more than 3 times in night)",
+          "urine-hesitancy",
+          "blood-present",
         ],
       },
     ],
