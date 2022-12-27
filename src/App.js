@@ -49,7 +49,9 @@ const App = () => {
     <div className="container">
       <Header />
       {symptoms.length > 0 ? (
-        <SymptomList symptoms={symptoms} onAdd={addDisorder} />
+        <>
+          <SymptomList symptoms={symptoms} onAdd={addDisorder} />
+        </>
       ) : (
         "No Disorders to show"
       )}

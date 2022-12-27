@@ -1,8 +1,22 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../UI/Card";
 import classes from "./SymptomList.module.css";
 
 let disorderCategories = [];
+
+const header_titles = [
+  "General",
+  "Body Parts",
+  "Stool related",
+  "Brain and Mind Related",
+];
+
+const header_fields = [
+  "general",
+  "body-Parts",
+  "stool-related",
+  "brain-and-mind-related",
+];
 
 const SymptomList = ({ symptoms, onAdd }) => {
   const [disorderName, setDisorderName] = useState("");
@@ -34,17 +48,8 @@ const SymptomList = ({ symptoms, onAdd }) => {
           )
         );
       } else {
-        // configSymptoms.forEach((e) =>
-        //   console.log(
-        //     `SUB category=${e.category} name=${name} value=${value} state=${
-        //       e.sub_cat_cb_value
-        //     } sub_category=${e.sub_category} valfound=${
-        //       e.category == name && e.sub_category.includes(value)
-        //     }`
-        //   )
-        // );
         setconfigSymptoms(
-          configSymptoms.map((e) =>
+          configSymptoms?.map((e) =>
             e.category === name && e.sub_category.includes(value)
               ? {
                   ...e,
@@ -55,6 +60,14 @@ const SymptomList = ({ symptoms, onAdd }) => {
           )
         );
       }
+      // header_fields.forEach((v, index) => {
+      //   configSymptoms[header_fields[index]].forEach((e) =>
+      //     console.log(
+      //       `name=${name} category=${e.category} state1=${e.cat_cb_state} state=${e.sub_cat_cb_value} sub_category=${e.sub_category} value=${value}`
+      //     )
+      //   );
+      // });
+      console.log(`${name} is ${value} is ${checked}`);
     } else {
       if (name === "symptoms") {
         setconfigSymptoms(
@@ -132,61 +145,73 @@ const SymptomList = ({ symptoms, onAdd }) => {
           />
         </div>
       </form>
-      <span className={classes.symptoms}>
-        {symptoms[0].categories.map((symptom) => (
-          <Card key={Math.floor(Math.random() * 10000) + 1}>
-            <span>
-              <h3>
-                <input
-                  type="checkbox"
-                  name="symptoms"
-                  value={symptom.category}
-                  id={symptom.category}
-                  onChange={handleChange}
-                  checked={
-                    configSymptoms.filter(
-                      (e) =>
-                        e.category === symptom.category &&
-                        e.cat_cb_state === true
-                    ).length > 0
-                  }
-                />
-                &nbsp;
-                <label htmlFor="flexCheckDefault">{symptom.category}</label>
-              </h3>
-              <ul>
-                {symptom.sub_category.map((sub, index) => (
-                  <span
-                    style={{ display: "inline" }}
-                    key={Math.floor(Math.random() * 10000) + 1}
-                  >
-                    <input
-                      style={{ display: "inline" }}
-                      type="checkbox"
-                      name={symptom.category}
-                      value={sub}
-                      id={Math.floor(Math.random() * 10000) + 1}
-                      onChange={handleChange}
-                      checked={
-                        configSymptoms.filter(
-                          (e) =>
-                            e.category === symptom.category &&
-                            e.sub_cat_cb_value?.includes(sub)
-                        ).length > 0
-                      }
-                    />
-                    <li
-                      key={Math.floor(Math.random() * 10000) + 1}
-                      style={{ display: "inline" }}
-                    >
-                      <label style={{ display: "inline" }}>{sub}</label>
-                      <br />
-                    </li>
+      <span>
+        {header_fields.map((v, idx) => (
+          <React.Fragment>
+            <h4>
+              {v}-{idx}
+            </h4>
+            <br />
+            <span className={classes.symptoms}>
+              {symptoms[0].categories.map((symptom) => (
+                <Card key={Math.floor(Math.random() * 10000) + 1}>
+                  <span>
+                    <h3>
+                      <input
+                        type="checkbox"
+                        name="symptoms"
+                        value={symptom.category}
+                        id={symptom.category}
+                        onChange={handleChange}
+                        checked={
+                          configSymptoms.filter(
+                            (e) =>
+                              e.category === symptom.category &&
+                              e.cat_cb_state === true
+                          ).length > 0
+                        }
+                      />
+                      &nbsp;
+                      <label htmlFor="flexCheckDefault">
+                        {symptom.category}
+                      </label>
+                    </h3>
+                    <ul>
+                      {symptom.sub_category.map((sub, index) => (
+                        <span
+                          style={{ display: "inline" }}
+                          key={Math.floor(Math.random() * 10000) + 1}
+                        >
+                          <input
+                            style={{ display: "inline" }}
+                            type="checkbox"
+                            name={symptom.category}
+                            value={sub}
+                            id={Math.floor(Math.random() * 10000) + 1}
+                            onChange={handleChange}
+                            checked={
+                              configSymptoms.filter(
+                                (e) =>
+                                  e.category === symptom.category &&
+                                  e.sub_cat_cb_value?.includes(sub)
+                              ).length > 0
+                            }
+                          />
+                          <li
+                            key={Math.floor(Math.random() * 10000) + 1}
+                            style={{ display: "inline" }}
+                          >
+                            <label style={{ display: "inline" }}>{sub}</label>
+                            <br />
+                          </li>
+                        </span>
+                      ))}
+                    </ul>
                   </span>
-                ))}
-              </ul>
+                </Card>
+              ))}
             </span>
-          </Card>
+          </React.Fragment>
         ))}
       </span>
     </div>

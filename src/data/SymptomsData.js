@@ -139,6 +139,52 @@ const SymptomsData = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "indvividual-body-parts",
+    categories: [
+      {
+        id: 1,
+        category: "eyes",
+        sub_category: ["red-eye-with-pain", "red-watery-eyes"],
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "stool-urine-mucus-discharge",
+    categories: [
+      {
+        id: 1,
+        category: "stool",
+        sub_category: [
+          "diarrhea",
+          "constipation",
+          "black-colored",
+          "blood-present",
+          "blood-mixed in stool",
+          "blood-in-wipes",
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "brain-and-mind-related",
+    categories: [
+      {
+        id: 1,
+        category: "brain-related",
+        sub_category: [
+          "personality-changes",
+          "behavior-changes",
+          "unconsciousness",
+          "delirium",
+          "confusion",
+        ],
+      },
+    ],
+  },
 ];
 
 export default SymptomsData;
