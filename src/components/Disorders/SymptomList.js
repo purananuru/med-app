@@ -20,6 +20,8 @@ const header_fields = [
 
 const SymptomList = ({ symptoms, onAdd }) => {
   const [disorderName, setDisorderName] = useState("");
+  const [disorderNotes, setDisorderNotes] = useState("");
+  const [disorderLinks, setDisorderLinks] = useState("");
   const [configSymptoms, setconfigSymptoms] = useState([]);
 
   const initconfigSymptons = () => {
@@ -136,9 +138,11 @@ const SymptomList = ({ symptoms, onAdd }) => {
       return;
     }
 
-    onAdd({ disorderCategories, disorderName });
+    onAdd({ disorderCategories, disorderName, disorderNotes, disorderLinks });
 
     setDisorderName("");
+    setDisorderNotes("");
+    setDisorderLinks("");
     disorderCategories = [];
     initconfigSymptons();
     e.preventDefault();
@@ -151,10 +155,25 @@ const SymptomList = ({ symptoms, onAdd }) => {
         <div className="form-control">
           <label>Disorder Name</label>
           <input
-            type="disorderName"
             placeholder="Add Disorder"
             value={disorderName}
             onChange={(e) => setDisorderName(e.target.value)}
+          />
+          <label>Notes</label>
+          <textarea
+            placeholder="Disorder Notes"
+            rows="3"
+            cols="50"
+            value={disorderNotes}
+            onChange={(e) => setDisorderNotes(e.target.value)}
+          />
+          <label>Links</label>
+          <textarea
+            placeholder="Link Name and link, separate by ;"
+            rows="3"
+            cols="50"
+            value={disorderLinks}
+            onChange={(e) => setDisorderLinks(e.target.value)}
           />
           <input
             type="submit"
@@ -211,6 +230,7 @@ const SymptomList = ({ symptoms, onAdd }) => {
                             checked={
                               configSymptoms.filter(
                                 (e) =>
+                                  e.major_category === header_fields[idx] &&
                                   e.category === symptom.category &&
                                   e.sub_cat_cb_value?.includes(sub)
                               ).length > 0

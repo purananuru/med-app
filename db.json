@@ -34,6 +34,149 @@
       ],
       "disorderName": "wer",
       "id": 1
+    },
+    {
+      "disorderCategories": [
+        {
+          "major_category": "general",
+          "category": "fever",
+          "sub_category": [
+            "low-grade"
+          ]
+        },
+        {
+          "major_category": "general",
+          "category": "chills",
+          "sub_category": [
+            "chills"
+          ]
+        },
+        {
+          "major_category": "general",
+          "category": "special-symptoms",
+          "sub_category": [
+            "high-fever-with-profuse-sweating-alternate-with-shivering-and-chills"
+          ]
+        },
+        {
+          "major_category": "body-Parts",
+          "category": "eyes",
+          "sub_category": [
+            "red-eye-with-pain"
+          ]
+        },
+        {
+          "major_category": "body-Parts",
+          "category": "head",
+          "sub_category": [
+            "head"
+          ]
+        },
+        {
+          "major_category": "stool-related",
+          "category": "stool",
+          "sub_category": [
+            "diarrhea"
+          ]
+        },
+        {
+          "major_category": "stool-related",
+          "category": "skin-rash",
+          "sub_category": [
+            "rash"
+          ]
+        },
+        {
+          "major_category": "brain-and-mind-related",
+          "category": "brain-related",
+          "sub_category": [
+            "personality-changes"
+          ]
+        }
+      ],
+      "disorderName": "ttt",
+      "id": 2
+    },
+    {
+      "disorderCategories": [
+        {
+          "major_category": "general",
+          "category": "fever",
+          "sub_category": [
+            "low-grade"
+          ]
+        },
+        {
+          "major_category": "general",
+          "category": "sweats",
+          "sub_category": [
+            "sweats"
+          ]
+        },
+        {
+          "major_category": "body-Parts",
+          "category": "hair-and-scalp",
+          "sub_category": [
+            "hair-and-scalp"
+          ]
+        },
+        {
+          "major_category": "stool-related",
+          "category": "skin-itching",
+          "sub_category": [
+            "miserable-itching",
+            "all-over-body-itching"
+          ]
+        },
+        {
+          "major_category": "brain-and-mind-related",
+          "category": "brain-related",
+          "sub_category": [
+            "behavior-changes",
+            "personality-changes"
+          ]
+        }
+      ],
+      "disorderName": "rty",
+      "id": 3
+    },
+    {
+      "disorderCategories": [
+        {
+          "major_category": "general",
+          "category": "fever",
+          "sub_category": [
+            "low-grade",
+            "medium"
+          ]
+        }
+      ],
+      "disorderName": "rrw",
+      "disorderNotes": "the quick brown fox\njumped over the lazy\ndog",
+      "id": 4
+    },
+    {
+      "disorderCategories": [
+        {
+          "major_category": "general",
+          "category": "fever",
+          "sub_category": [
+            "low-grade",
+            "medium"
+          ]
+        },
+        {
+          "major_category": "body-Parts",
+          "category": "eyes",
+          "sub_category": [
+            "red-eye-with-pain"
+          ]
+        }
+      ],
+      "disorderName": "tyt",
+      "disorderNotes": "It is important to see your doctor so that you can receive a correct diagnosis and prompt treatment.",
+      "disorderLinks": "Heart disease https://www.webmd.com/heart-disease/guide/heart-disease-symptoms#091e9c5e8000853c-1-2; Symptoms of Atrial https://www.webmd.com/heart-disease/guide/heart-disease-symptoms#091e9c5e8000853c-2-6",
+      "id": 5
     }
   ]
 }
