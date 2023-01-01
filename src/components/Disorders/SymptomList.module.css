@@ -4,6 +4,7 @@
   max-width: 40rem; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .symptoms ul {
